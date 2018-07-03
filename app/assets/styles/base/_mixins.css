@@ -1,0 +1,7 @@
+/*Mixins*/
+
+@define-mixin small-screen {
+	@media (min-width: 530px) {
+		@mixin-content;
+	}
+}
