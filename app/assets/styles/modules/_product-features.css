@@ -1,0 +1,38 @@
+.product-features {
+	font-size: $font-size-base;
+
+	&__content-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+
+	&__title {
+		font-size: $font-size-section-heading;
+		text-align: center;
+		margin-bottom: 6rem;
+	}
+
+	&__content-text {
+		margin-right: 3rem;
+		flex: 0 1 30%;
+
+		&:last-child {
+			margin-right: 0;
+			margin-left: 3rem;
+		}
+	}
+
+	&__text-blurb {
+		margin-bottom: 4.5rem;
+	}
+
+	&__content-image {
+
+	}
+
+	&__image {
+
+	}
+}

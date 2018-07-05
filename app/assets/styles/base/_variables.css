@@ -1,5 +1,13 @@
 $color-primary-orange: #D96313;
+$color-primary-orange-light: #F08137;
 $color-primary-blue: #1B3B92;
 $color-primary-green: #0C8974;
 $color-primary-yellow: #D99913;
+$color-primary-grey-light: #EFEFEF;
 $color-primary-text: #3E3E3E;
+
+$base-font-family: 'Lato', sans-serif;
+$heading-font-family: 'Open Sans', sans-serif;
+
+$font-size-section-heading: 3.5rem;
+$font-size-base: 1.6rem;

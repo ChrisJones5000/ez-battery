@@ -1,0 +1,15 @@
+.product-overview {
+	font-size: $font-size-base;
+	color: #EFEFEF;
+
+	@mixin linear-gradient;
+
+	&__title {
+		font-size: $font-size-section-heading;
+		margin-bottom: 3rem;
+	}
+
+	&__text {
+
+	}
+}

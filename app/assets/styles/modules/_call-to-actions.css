@@ -1,0 +1,20 @@
+.video-cta {
+	font-size: $font-size-base;
+	color: #EFEFEF;
+	text-align: center;
+
+	@mixin section-gradient;
+	
+	&__title {
+		font-size: $font-size-section-heading;
+		margin-bottom: 1.5rem;
+	}
+
+	&__text {
+		font-size: 2.2rem;
+		font-weight: 300;
+		max-width: 70rem;
+		margin: 0 auto;
+		margin-bottom: 3rem;
+	}
+}

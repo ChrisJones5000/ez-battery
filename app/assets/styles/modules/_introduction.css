@@ -1,0 +1,38 @@
+.introduction {
+	font-size: $font-size-base;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+
+	&__text-content {
+		flex: 0 1 65%;
+		margin-right: 3rem;
+	}
+
+	&__text-title {
+		font-size: $font-size-section-heading;
+		margin-bottom: 3rem;
+	}
+
+	&__text {
+
+	}
+
+	&__logo-container {
+
+	}
+
+	&__logo-text {
+		text-align: center;
+		font-size: 2.4rem;
+	}
+
+	&__image {
+		margin-bottom: 2rem;
+		display: inline-block;
+	}
+}

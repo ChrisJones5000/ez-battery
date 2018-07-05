@@ -1,0 +1,44 @@
+.product-scope {
+	font-size: $font-size-base;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__text-content {
+		flex: 0 1 40%;
+	}
+
+	&__title {
+		font-size: $font-size-section-heading;
+		margin-bottom: 3rem;
+	}
+
+	&__text {
+		
+	}
+
+	&__icon-grid {
+		flex: 0 1 40%;
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+
+	&__icon-grid-item {
+		flex: 0 1 30%;
+		text-align: center;
+		margin-top: 5rem;
+	}
+
+	&__icon {
+		font-size: 6rem;
+		color: $color-primary-green;
+	}
+
+	&__icon-text {
+		font-weight: 700;
+	}
+}

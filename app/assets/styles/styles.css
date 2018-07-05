@@ -8,5 +8,18 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
-
+@import 'modules/_hero-header';
+@import 'modules/_buttons';
+@import 'modules/_containers';
+@import 'modules/_introduction';
+@import 'modules/_product-overview';
+@import 'modules/_product-features';
+@import 'modules/_product-blurbs';
+@import 'modules/_product-scope';
+@import 'modules/_call-to-actions';
+@import 'modules/_ratings-intro';
+@import 'modules/_ratings';
+@import 'modules/_utilities';
+@import 'modules/_recommendation';
+@import 'modules/_final-details';
 

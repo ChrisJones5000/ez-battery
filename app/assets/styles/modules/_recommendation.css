@@ -1,0 +1,39 @@
+.recommendation {
+	color: #EFEFEF;
+
+	@mixin linear-gradient;
+
+	&__title {
+		font-size: $font-size-section-heading;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	&__subtitle {
+		font-size: 2.4rem;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	&__text {
+		font-size: $font-size-base;
+		margin-bottom: 3rem;
+	}
+
+	&__cta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__cta-text {
+		font-size: 3.5rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	&__cta-icon {
+		margin-right: 2rem;
+	}
+}

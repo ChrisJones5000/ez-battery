@@ -7,18 +7,32 @@
 }
 
 html {
-	font-size: 50%;
+	font-size: 62.5%;
 }
 
 body {
 	box-sizing: border-box;
+	font-family: $base-font-family;
+	margin-bottom: 40rem;
 }
 
 h1, h2, h3, h4, h5, h6, p {
 	font-size: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font-family;
+}
+
+p {
+	line-height: 1.5;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+section {
+	padding: 6rem 0;
 }

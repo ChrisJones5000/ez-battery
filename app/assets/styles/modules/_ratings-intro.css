@@ -1,0 +1,27 @@
+.ratings-intro {
+	font-size: $font-size-base;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+
+	&__image {
+		flex: 0 1 30%;
+	}
+
+	&__text-content {
+		flex: 0 1 60%;
+	}
+
+	&__title {
+		font-size: $font-size-section-heading;
+		margin-bottom: 3rem;
+	}
+
+	&__text {
+
+	}
+}

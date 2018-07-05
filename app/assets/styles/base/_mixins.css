@@ -5,3 +5,7 @@
 		@mixin-content;
 	}
 }
+
+@define-mixin linear-gradient $angle: 45deg, $color-start: $color-primary-orange, $color-end: $color-primary-orange-light {
+	background-image: linear-gradient($angle, $color-start, $color-end);
+}

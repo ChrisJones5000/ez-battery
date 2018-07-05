@@ -1,0 +1,42 @@
+.hero-header {
+	position: relative;
+	color: #EFEFEF;
+
+	&__content-container {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__text-content {
+		margin-right: 3rem;
+	}
+
+	&__title {
+		font-size: 6rem;
+		font-weight: 600;
+	}
+
+	&__subtitle {
+		font-size: 2.6rem;
+		font-weight: 300;
+		margin-bottom: 6rem;
+		line-height: 1.4;
+	}
+
+	&__video {
+		border: .5rem solid #DDD;
+
+		iframe {
+			margin-bottom: -2px;
+		}
+	}
+}

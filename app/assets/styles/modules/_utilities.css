@@ -1,0 +1,13 @@
+.utilities {
+
+	&__background {
+
+		&--light {
+			background-color: #EFEFEF !important;
+		}
+
+		&--primary {
+			background-color: $color-primary-orange;
+		}
+	}
+}

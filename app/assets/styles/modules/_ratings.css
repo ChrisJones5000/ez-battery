@@ -1,0 +1,96 @@
+.ratings {
+
+	&__title-content {
+		text-align: center;
+		margin-bottom: 8rem;
+	}	
+
+	&__title {
+		font-size: $font-size-section-heading;
+		margin-bottom: 1.5rem;
+	}
+
+	&__subtitle {
+		font-size: 2.4rem;
+		color: #999;
+	}
+
+	&__icons {
+		margin-top: .5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	&__icon {
+		color: $color-primary-yellow;
+		margin-right: .7rem;
+	}
+
+	&__section {
+		font-size: $font-size-base;
+	}
+
+	&__section-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__section-text-content {
+		flex: 0 1 45%;
+	}
+
+	&__section-title {
+		font-size: 2.4rem;
+	}
+
+	&__section-text {
+		font-size: $font-size-base;
+	}
+
+	&__section-chart {
+		flex: 0 1 45%;
+		box-shadow: -5px 5px 1.5rem 2px rgba(0,0,0,.15);
+		padding: 1.5rem;
+	}
+
+	&__section-chart-item {
+		margin-bottom: 2rem;
+	}
+
+	&__section-chart-item-label {
+		color: #777;
+		margin-bottom: .5rem;
+		display: block;
+		font-size: 1.6rem;
+	}
+
+	&__section-chart-item-bar {
+		background-color: $color-primary-green;
+		color: #EFEFEF;
+		font-size: 2rem;
+		padding: 1rem 1rem 1rem 0;
+		width: 100%;
+		display: block;
+		text-align: right;
+
+		&--1 {
+			width: 78%;
+		}
+
+		&--2 {
+			width: 93%;
+		}
+
+		&--3 {
+			width: 95%;
+		}
+
+		&--4 {
+			width: 87%;
+		}
+	}
+
+	&__section-image {
+		flex: 0 1 45%;
+	}
+}

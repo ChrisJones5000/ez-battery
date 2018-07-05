@@ -1,0 +1,57 @@
+.final-details {
+
+	&__container {
+
+	}
+
+	&__title {
+
+	}
+
+	&__details {
+
+	}
+
+	&__details-title {
+
+	}
+
+	&__details-subtitle {
+
+	}
+
+	&__table {
+
+	}
+
+	&__pros-cons {
+
+	}
+
+	&__pros-cons-title {
+
+	}
+
+	&__pros-cons-subtitle {
+
+	}
+
+	&__list {
+
+	}
+
+	&__list-item {
+
+	}
+
+	&__list-icon {
+
+		&--green {
+
+		}
+
+		&--red {
+
+		}
+	}
+}
