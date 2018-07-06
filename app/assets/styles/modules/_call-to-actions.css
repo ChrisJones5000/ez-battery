@@ -3,7 +3,7 @@
 	color: #EFEFEF;
 	text-align: center;
 
-	@mixin section-gradient;
+	@mixin linear-gradient;
 	
 	&__title {
 		font-size: $font-size-section-heading;
@@ -15,6 +15,30 @@
 		font-weight: 300;
 		max-width: 70rem;
 		margin: 0 auto;
+		margin-bottom: 3rem;
+	}
+}
+
+.bonus-cta {
+	font-size: $font-size-base;
+	color: #EFEFEF;
+	text-align: center;
+
+	@mixin linear-gradient;
+
+	&__title {
+		font-size: $font-size-section-heading;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	&__subtitle {
+		text-align: center;
+		font-size: 2.4rem;
+		margin-bottom: 3rem;
+	}
+
+	&__text {
 		margin-bottom: 3rem;
 	}
 }

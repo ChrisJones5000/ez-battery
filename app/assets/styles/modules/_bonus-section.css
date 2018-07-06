@@ -1,0 +1,25 @@
+.bonus-section {
+	font-size: $font-size-base;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__bonus {
+		flex: 0 1 40%;
+	}
+
+	&__bonus-image {
+
+	}
+
+	&__bonus-title {
+		font-size: 2.4rem;
+		margin-bottom: 1.5rem;
+	}
+
+	&__bonus-text {
+
+	}
+}
