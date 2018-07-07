@@ -1,0 +1,22 @@
+.top-header {
+	padding: 1.5rem 0;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	background-color: #FFF;
+
+	&__container {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 2rem;
+		color: $color-primary-text;
+		margin-bottom: 1.5rem;
+	}
+
+	&__button {
+
+	}
+}

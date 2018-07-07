@@ -1,0 +1,20 @@
+.reviews {
+	background-color: #EFEFEF;
+
+	&__title {
+		font-size: $font-size-section-heading;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: $font-size-base;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 8rem;
+		line-height: 1.5;
+		max-width: 80rem;
+		font-weight: 300;
+	}
+}

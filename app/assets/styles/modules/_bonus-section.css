@@ -4,10 +4,21 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	&__bonus {
-		flex: 0 1 40%;
+		flex: 0 1 30%;
+	}
+
+	&__icon {
+		font-size: 10rem;
+		color: $color-primary-green;
+		transition: all .25s;
+
+		&:hover {
+			transform: rotate(180deg);
+		}
 	}
 
 	&__bonus-image {
@@ -17,9 +28,5 @@
 	&__bonus-title {
 		font-size: 2.4rem;
 		margin-bottom: 1.5rem;
-	}
-
-	&__bonus-text {
-
 	}
 }

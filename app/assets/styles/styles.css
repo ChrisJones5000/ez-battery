@@ -9,6 +9,7 @@
 @import 'base/_mixins';
 @import 'base/_global';
 @import 'modules/_hero-header';
+@import 'modules/_top-header';
 @import 'modules/_buttons';
 @import 'modules/_containers';
 @import 'modules/_introduction';
@@ -23,3 +24,5 @@
 @import 'modules/_recommendation';
 @import 'modules/_final-details';
 @import 'modules/_bonus-section';
+@import 'modules/_reviews';
+@import 'modules/_testimonials';
