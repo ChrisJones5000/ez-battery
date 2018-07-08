@@ -435,9 +435,12 @@ section {
 	padding: 1.5rem 0;
 	position: fixed;
 	top: 0;
-	z-index: 2;
+	z-index: -1;
 	width: 100%;
-	background-color: #FFF;
+	background-color: #1B3B92;
+	opacity: 0;
+	transition: all .75s;
+	box-shadow: 0 2px 1rem 2px rgba(0,0,0,.5);
 }
 
 .top-header__container {
@@ -446,12 +449,17 @@ section {
 
 .top-header__title {
 		font-size: 2rem;
-		color: #3E3E3E;
+		color: #EFEFEF;
 		margin-bottom: 1.5rem;
 	}
 
 .top-header__button {
 
+	}
+
+.top-header--is-visible {
+		opacity: 1;
+		z-index: 9999;
 	}
 
 .btn {
@@ -481,7 +489,7 @@ section {
 			height: 100%;
 			transition: all .3s;
 			border-radius: 1rem;
-			background-color: rgba(62,62,62, .5);
+			background-color: rgba(62,62,62, .2);
 		}
 
 .btn--primary:hover::before {
@@ -505,10 +513,34 @@ section {
 			width: 0;
 			transition: all .3s;
 			border-radius: 1rem;
-			background-color: rgba(62,62,62, .5);
+			background-color: rgba(62,62,62, .8);
 		}
 
 .btn--secondary:hover::before {
+			width: 100%;
+		}
+
+.btn--light {
+		background-color: #EFEFEF;
+		color: #1B3B92;
+		border-radius: 1rem;
+		position: relative;
+	}
+
+.btn--light::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 0;
+			transition: all .3s;
+			border-radius: 1rem;
+			background-color: rgba(62,62,62, .2);
+		}
+
+.btn--light:hover::before {
 			width: 100%;
 		}
 

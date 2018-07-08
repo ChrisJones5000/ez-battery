@@ -2,9 +2,12 @@
 	padding: 1.5rem 0;
 	position: fixed;
 	top: 0;
-	z-index: 2;
+	z-index: -1;
 	width: 100%;
-	background-color: #FFF;
+	background-color: $color-primary-blue;
+	opacity: 0;
+	transition: all .75s;
+	box-shadow: 0 2px 1rem 2px rgba(0,0,0,.5);
 
 	&__container {
 		text-align: center;
@@ -12,11 +15,16 @@
 
 	&__title {
 		font-size: 2rem;
-		color: $color-primary-text;
+		color: #EFEFEF;
 		margin-bottom: 1.5rem;
 	}
 
 	&__button {
 
+	}
+
+	&--is-visible {
+		opacity: 1;
+		z-index: 9999;
 	}
 }
