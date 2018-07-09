@@ -67,28 +67,29 @@
 
 	&__section-chart-item-bar {
 		background-color: $color-primary-green;
-		color: #EFEFEF;
+		color: $color-primary-text;
 		font-size: 2rem;
 		padding: 1rem 1rem 1rem 0;
 		width: 100%;
 		display: block;
 		text-align: right;
 		transition: all .5s;
+		text-indent: 2rem;
 
 		&--1 {
-			width: 78%;
+			width: 0;
 		}
 
 		&--2 {
-			width: 93%;
+			width: 0;
 		}
 
 		&--3 {
-			width: 95%;
+			width: 0;
 		}
 
 		&--4 {
-			width: 87%;
+			width: 0;
 		}
 	}
 

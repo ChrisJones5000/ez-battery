@@ -42,7 +42,11 @@
 
 	&__skew-title {
 		transition: all .35s;
-		display: inline-block;
+
+		&:hover {
+			color: $color-primary-green;
+			transform: skew(-2deg, -2deg) scale(1.1);
+		}
 	}
 
 	&__skew-title:hover {
@@ -52,5 +56,37 @@
 
 	&__center-text {
 		text-align: center;
+	}
+
+	&__reveal {
+		transition: all 1s;
+
+		&--hidden {
+			opacity: 0;
+		}
+
+		&--initial-position-down {
+			transform: translateY(10rem);
+		}
+
+		&--initial-position-left {
+			transform: translateX(-10rem);
+		}
+
+		&--initial-position-right {
+			transform: translateX(10rem);
+		}
+
+		&--slide-up {
+			opacity: 1;
+		}
+
+		&--slide-left {
+			opacity: 1;
+		}
+
+		&--slide-right {
+			opacity: 1;
+		}
 	}
 }

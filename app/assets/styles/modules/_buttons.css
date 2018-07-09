@@ -23,7 +23,7 @@
 			height: 100%;
 			transition: all .3s;
 			border-radius: 1rem;
-			background-color: rgba($color-primary-text, .2);
+			background-color: rgba(0,0,0, .2);
 		}
 
 		&:hover::before {
@@ -47,7 +47,7 @@
 			width: 0;
 			transition: all .3s;
 			border-radius: 1rem;
-			background-color: rgba($color-primary-text, .8);
+			background-color: rgba(0,0,0, .2);
 		}
 
 		&:hover::before {
@@ -71,7 +71,7 @@
 			width: 0;
 			transition: all .3s;
 			border-radius: 1rem;
-			background-color: rgba($color-primary-text, .2);
+			background-color: rgba(0,0,0, .2);
 		}
 
 		&:hover::before {

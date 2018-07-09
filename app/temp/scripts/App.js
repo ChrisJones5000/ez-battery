@@ -11204,6 +11204,10 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 "use strict";
 
 
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 var _StickyHeader = __webpack_require__(3);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
@@ -11212,14 +11216,20 @@ var _RevealOnScroll = __webpack_require__(4);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
+var _ShowChartData = __webpack_require__(5);
+
+var _ShowChartData2 = _interopRequireDefault(_ShowChartData);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * Main javascript file for EZ Battery landing page
  */
-
 var sticky_header = new _StickyHeader2.default();
-var reveal_on_scroll = new _RevealOnScroll2.default();
+new _RevealOnScroll2.default((0, _jquery2.default)('.utilities__reveal-up'), 'utilities__reveal--slide-up');
+new _RevealOnScroll2.default((0, _jquery2.default)('.utilities__reveal-left'), 'utilities__reveal--slide-left');
+new _RevealOnScroll2.default((0, _jquery2.default)('.utilities__reveal-right'), 'utilities__reveal--slide-right');
+var show_chart_data = new _ShowChartData2.default();
 
 /***/ }),
 /* 3 */
@@ -11251,7 +11261,7 @@ var StickyHeader = function () {
 		_classCallCheck(this, StickyHeader);
 
 		this.top_header = (0, _jquery2.default)('.top-header');
-		this.header_trigger = (0, _jquery2.default)('.introduction');
+		this.header_trigger = (0, _jquery2.default)('.hero-header__button');
 		this.createHeaderWaypoint();
 	}
 
@@ -11288,6 +11298,8 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -11300,11 +11312,117 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var RevealOnScroll = function RevealOnScroll() {
-	_classCallCheck(this, RevealOnScroll);
-};
+var RevealOnScroll = function () {
+	function RevealOnScroll(elements, classToAdd) {
+		_classCallCheck(this, RevealOnScroll);
+
+		this.itemsToReveal = elements;
+		this.classToAdd = classToAdd;
+		this.hideInitially();
+		this.createWaypoints();
+	}
+
+	_createClass(RevealOnScroll, [{
+		key: 'hideInitially',
+		value: function hideInitially() {
+			this.itemsToReveal.addClass('utilities__reveal--hidden');
+
+			switch (this.classToAdd) {
+				case 'utilities__reveal--slide-up':
+					this.itemsToReveal.addClass('utilities__reveal--initial-position-down');
+					this.initialClass = 'utilities__reveal--initial-position-down';
+					break;
+
+				case 'utilities__reveal--slide-left':
+					this.itemsToReveal.addClass('utilities__reveal--initial-position-right');
+					this.initialClass = 'utilities__reveal--initial-position-right';
+					break;
+
+				case 'utilities__reveal--slide-right':
+					this.itemsToReveal.addClass('utilities__reveal--initial-position-left');
+					this.initialClass = 'utilities__reveal--initial-position-left';
+					break;
+			}
+		}
+	}, {
+		key: 'createWaypoints',
+		value: function createWaypoints() {
+			var that = this;
+			this.itemsToReveal.each(function () {
+				var currentItem = this;
+				new Waypoint({
+					element: currentItem,
+					handler: function handler() {
+						(0, _jquery2.default)(currentItem).removeClass('utilities__reveal--hidden');
+						(0, _jquery2.default)(currentItem).removeClass(that.initialClass);
+						(0, _jquery2.default)(currentItem).addClass(that.classToAdd);
+					},
+					offset: '85%'
+				});
+			});
+		}
+	}]);
+
+	return RevealOnScroll;
+}();
 
 exports.default = RevealOnScroll;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ShowChartData = function () {
+	function ShowChartData() {
+		_classCallCheck(this, ShowChartData);
+
+		this.chart_items = (0, _jquery2.default)('.ratings__section-chart-item-bar');
+		this.show_ratings_button = (0, _jquery2.default)('.ratings__chart-button');
+		this.clickEvents();
+	}
+
+	_createClass(ShowChartData, [{
+		key: 'clickEvents',
+		value: function clickEvents() {
+			var that = this;
+			this.show_ratings_button.click(function (e) {
+				that.showData();
+				e.preventDefault();
+			});
+		}
+	}, {
+		key: 'showData',
+		value: function showData() {
+			this.chart_items.each(function () {
+				var rating_percent = this.dataset.rating;
+				this.style.width = rating_percent;
+				this.style.color = '#EFEFEF';
+				this.innerHTML = rating_percent;
+			});
+		}
+	}]);
+
+	return ShowChartData;
+}();
+
+exports.default = ShowChartData;
 
 /***/ })
 /******/ ]);
