@@ -17,4 +17,48 @@
 		max-width: 80rem;
 		font-weight: 300;
 	}
+
+	&__carousel {
+		.slick-slide > div {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			max-width: 70rem;
+		}
+
+		.slick-prev {
+			left: 6.5rem;
+			z-index: 9;
+		}
+
+		.slick-next {
+			right: 10rem;
+			z-index: 9;
+		}
+
+		.slick-prev::before {
+			content: '\f104';
+			font-family: 'Font Awesome 5 Free';			
+			font-weight: 900;
+			font-size: 5rem;
+			height: 5rem;
+			width: 5rem;
+			display: inline-block;
+			background-color: $color-primary-blue;
+			border-radius: 100%;
+		}
+
+		.slick-next::before {
+			content: '\f105';
+			font-family: 'Font Awesome 5 Free';			
+			font-weight: 900;
+			font-size: 5rem;
+			height: 5rem;
+			width: 5rem;
+			display: inline-block;
+			background-color: $color-primary-blue;
+			border-radius: 100%;
+		}
+	}	
 }

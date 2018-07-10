@@ -7,6 +7,8 @@
 @import 'normalize.css';
 @import 'base/_variables';
 @import 'base/_mixins';
+@import 'slick-carousel/slick/slick';
+@import 'slick-carousel/slick/slick-theme';
 @import 'base/_global';
 @import 'modules/_hero-header';
 @import 'modules/_top-header';

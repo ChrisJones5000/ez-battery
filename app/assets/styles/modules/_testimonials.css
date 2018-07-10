@@ -1,11 +1,10 @@
 .testimonial {
 	font-size: $font-size-base;
-	max-width: 70rem;
 	margin-left: auto;
 	margin-right: auto;
 	background: #FFF;
 	padding: 2.5rem 3.5rem;
-	box-shadow: -5px 5px 1.5rem 2px rgba(0,0,0,.2);
+	box-shadow: -5px 5px 1.5rem 2px rgba(0,0,0,.15);
 	border-radius: 2rem;
 
 	&::after {
