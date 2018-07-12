@@ -3,6 +3,7 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		flex-flow: row wrap;
 	}
 
 	&__title {
@@ -12,7 +13,12 @@
 	}
 
 	&__details {
-		flex: 0 1 65%;
+		width: 100%;
+
+		@mixin medium-screen--mid {
+			flex: 0 1 65%;
+		}
+		
 	}
 
 	&__details-title {
@@ -51,7 +57,13 @@
 	}
 
 	&__pros-cons {
-		flex: 0 1 25%;
+		width: 100%;
+		margin-top: 6rem;
+
+		@mixin medium-screen--mid {
+			flex: 0 1 25%;
+			margin-top: 0;
+		}		
 	}
 
 	&__pros-cons-title {

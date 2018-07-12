@@ -4,8 +4,11 @@
 	margin-right: auto;
 	background: #FFF;
 	padding: 2.5rem 3.5rem;
-	box-shadow: -5px 5px 1.5rem 2px rgba(0,0,0,.15);
 	border-radius: 2rem;
+
+	@mixin medium-screen--mid {
+		box-shadow: -5px 5px 1.5rem 2px rgba(0,0,0,.15);
+	}
 
 	&::after {
 		content: '';
@@ -15,6 +18,7 @@
 
 	&__title {
 		font-size: 2.4rem;
+		margin-bottom: 1rem;
 	}
 
 	&__author-container {
@@ -23,7 +27,7 @@
 	}
 
 	&__author {
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 
 	&__text-content {
@@ -33,9 +37,17 @@
 	}
 
 	&__quote-icon {
-		font-size: 5rem;
+		font-size: 3rem;
 		margin-right: 2rem;
 		color: $color-primary-yellow;
+
+		@mixin small-screen--mid {
+			font-size: 4rem;
+		}
+
+		@mixin small-screen--upper {
+			font-size: 5rem;
+		}
 	}
 
 	&__text {

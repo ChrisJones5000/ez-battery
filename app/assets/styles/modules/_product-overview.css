@@ -1,15 +1,16 @@
 .product-overview {
 	font-size: $font-size-base;
 	color: #EFEFEF;
+	text-align: center;
+
+	@mixin medium-screen--lower {
+		text-align: left;
+	}
 
 	@mixin linear-gradient;
 
 	&__title {
 		font-size: $font-size-section-heading;
 		margin-bottom: 3rem;
-	}
-
-	&__text {
-
 	}
 }

@@ -14,13 +14,28 @@
 		margin-bottom: 6rem;
 	}
 
-	&__content-text {
-		margin-right: 3rem;
-		flex: 0 1 30%;
+	&__content-text {		
+		width: 100%;
+		flex: 1 1 auto;
+		text-align: center;
+
+		@mixin small-screen--upper {
+			text-align: left;
+		}
+
+		@mixin medium-screen--upper {
+			flex: 0 1 30%;
+		}
+		
 
 		&:last-child {
 			margin-right: 0;
-			margin-left: 3rem;
+			margin-left: 0;			
+
+			@mixin medium-screen--upper {
+				margin-left: 3rem;
+
+			}
 		}
 	}
 
@@ -29,7 +44,11 @@
 	}
 
 	&__content-image {
+		order: -1;
 
+		@mixin large-screen--lower {
+			order: 0;
+		}
 	}
 
 	&__image {

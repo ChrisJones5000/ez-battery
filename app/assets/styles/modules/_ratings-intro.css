@@ -9,11 +9,17 @@
 	}
 
 	&__image {
-		flex: 0 1 30%;
+
+		@mixin medium-screen--lower {
+			flex: 0 1 40%;
+		}
 	}
 
 	&__text-content {
-		flex: 0 1 60%;
+
+		@mixin medium-screen--lower {
+			flex: 0 1 50%;
+		}
 	}
 
 	&__title {

@@ -5,10 +5,16 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-flow: row wrap;
 	}
 
 	&__text-content {
-		flex: 0 1 40%;
+		flex: 1;
+
+		@mixin medium-screen--mid {
+			flex: 1;
+			margin-right: 3rem;
+		}
 	}
 
 	&__title {
@@ -21,10 +27,13 @@
 	}
 
 	&__icon-grid {
-		flex: 0 1 40%;
 		display: flex;
 		justify-content: space-between;
 		flex-flow: row wrap;
+
+		@mixin medium-screen--mid {
+			flex: 1;
+		}
 	}
 
 	&__icon-grid-item {

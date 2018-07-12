@@ -22,8 +22,13 @@
 
 	&__cta {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
+		flex-flow: row wrap;
+
+		@mixin medium-screen--lower {
+			justify-content: space-between;
+		}
 	}
 
 	&__cta-text {
@@ -31,9 +36,26 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		margin-bottom: 3rem;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+
+		@mixin medium-screen--lower {
+			margin-bottom: 0;
+			margin-right: 0;
+			margin-left: 0;
+		}
 	}
 
 	&__cta-icon {
 		margin-right: 2rem;
+		margin-bottom: 2rem;
+		display: block;
+
+		@mixin medium-screen--mid {
+			margin-bottom: 0;
+			display: inline-block;
+		}
 	}
 }

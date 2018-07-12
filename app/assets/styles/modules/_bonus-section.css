@@ -5,16 +5,32 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-direction: column;
+
+		@mixin medium-screen--lower {
+			flex-direction: row;
+		}
 	}
 
 	&__bonus {
-		flex: 0 1 30%;
+		width: 100%;
+		text-align: center;
+		
+		@mixin medium-screen--lower {
+			flex: 0 1 30%;
+			text-align: left;
+		}
 	}
 
 	&__icon {
 		font-size: 10rem;
 		color: $color-primary-green;
 		transition: all .25s;
+		margin: 4rem 0;
+
+		@mixin medium-screen--lower {
+			margin: 0;
+		}
 
 		&:hover {
 			transform: rotate(180deg);
@@ -22,7 +38,8 @@
 	}
 
 	&__bonus-image {
-
+		margin-bottom: 2.5rem;
+		display: inline-block;
 	}
 
 	&__bonus-title {

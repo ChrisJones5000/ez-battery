@@ -22,7 +22,11 @@
 
 	&__icon {
 		color: $color-primary-yellow;
-		margin-right: .7rem;
+		margin-right: .5rem;
+
+		@mixin small-screen--mid {
+			margin-right: .7rem;
+		}
 	}
 
 	&__section {
@@ -33,10 +37,14 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-flow: row wrap;
 	}
 
 	&__section-text-content {
-		flex: 0 1 45%;
+
+		@mixin medium-screen--mid {
+			flex: 0 1 45%;
+		}
 	}
 
 	&__section-title {
@@ -45,13 +53,18 @@
 
 	&__section-text {
 		font-size: $font-size-base;
+		margin-bottom: 6rem;
 	}
 
 	&__section-chart {
-		flex: 0 1 45%;
+		flex: 1;
 		box-shadow: -5px 5px 1.5rem 2px rgba(0,0,0,.15);
 		padding: 1.5rem;
 		position: relative;
+
+		@mixin medium-screen--mid {
+			flex: 0 1 45%;
+		}
 	}
 
 	&__section-chart-item {
@@ -94,7 +107,15 @@
 	}
 
 	&__section-image {
-		flex: 0 1 45%;
+		flex: 1;
+		order: -1;
+		text-align: center;
+
+		@mixin medium-screen--mid {
+			flex: 0 1 45%;
+			order: 0;
+		}
+		
 	}
 
 	&__chart-button-container {

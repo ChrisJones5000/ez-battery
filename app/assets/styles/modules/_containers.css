@@ -2,4 +2,12 @@
 	max-width: 108rem;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 3rem;
+	padding-right: 3rem;
+
+	@mixin large-screen--lower {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
 }

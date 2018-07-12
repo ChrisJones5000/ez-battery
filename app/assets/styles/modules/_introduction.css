@@ -9,8 +9,14 @@
 	}
 
 	&__text-content {
-		flex: 0 1 65%;
-		margin-right: 3rem;
+		margin-bottom: 3rem;
+		text-align: center;
+
+		@mixin medium-screen--mid {
+			flex: 1 1 65%;
+			margin-right: 3rem;
+			text-align: left;
+		}
 	}
 
 	&__text-title {
@@ -23,12 +29,25 @@
 	}
 
 	&__logo-container {
+		margin-left: auto;
+		margin-right: auto;		
 
+		@mixin medium-screen--mid {
+			flex: 1 1 30%;
+		}
 	}
 
 	&__logo-text {
 		text-align: center;
 		font-size: 2.4rem;
+
+		@mixin medium-screen--mid {
+			font-size: 1.8rem;
+		}
+
+		@mixin large-screen--lower {
+			font-size: 2.4rem;
+		}
 	}
 
 	&__image {
