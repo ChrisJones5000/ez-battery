@@ -20,7 +20,7 @@
 	
 	&__image {
 		margin-bottom: 2.5rem;
-		display: inline-block;
+		display: block;
 	}
 
 	&__title {

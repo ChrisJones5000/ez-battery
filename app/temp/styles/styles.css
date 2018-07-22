@@ -1209,7 +1209,7 @@ section {
 
 .product-blurb__image {
 		margin-bottom: 2.5rem;
-		display: inline-block;
+		display: block;
 	}
 
 .product-blurb__title {
@@ -1817,7 +1817,8 @@ section {
 
 .bonus-section__bonus {
 			flex: 0 1 30%;
-			text-align: left
+			text-align: left;
+			align-self: flex-start
 	}
 	}
 
@@ -1842,7 +1843,7 @@ section {
 
 .bonus-section__bonus-image {
 		margin-bottom: 2.5rem;
-		display: inline-block;
+		display: block;
 	}
 
 .bonus-section__bonus-title {
@@ -2062,4 +2063,29 @@ section {
 .footer__copyright {
 		text-align: center;
 		font-size: 1.4rem;
+	}
+
+.inner-header {
+	background-color: #1B3B92;
+	color: #FFF;
+	padding: 5rem 0;
+}
+
+.inner-header__title {
+		font-size: 3.5rem;
+	}
+
+.inner-content {
+	font-size: 1.6rem;
+}
+
+.inner-content p {
+		margin: 1.5rem 0;
+	}
+
+.inner-content__heading {
+		font-size: 2rem;
+		margin: 1.5rem 0;
+		color: #777;
+		line-height: 1.5;
 	}

@@ -19,6 +19,7 @@
 		@mixin medium-screen--lower {
 			flex: 0 1 30%;
 			text-align: left;
+			align-self: flex-start;
 		}
 	}
 
@@ -39,7 +40,7 @@
 
 	&__bonus-image {
 		margin-bottom: 2.5rem;
-		display: inline-block;
+		display: block;
 	}
 
 	&__bonus-title {
